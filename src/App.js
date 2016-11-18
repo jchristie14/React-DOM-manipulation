@@ -7,7 +7,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Square startMargin={10} />
+        <Square
+          startMargin={10}
+          startColor='#ff0000' />
       </div>
     );
   }
