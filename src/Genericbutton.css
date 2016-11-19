@@ -1,5 +1,6 @@
 .Genericbutton {
 	clear: both;
 	float: left;
-	margin: 10vw;
+	margin-left: 10vw;
+	margin-top: 3vw;
 }

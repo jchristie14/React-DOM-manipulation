@@ -44,14 +44,13 @@ class Square extends Component {
     console.log("Up!")
   }
 
-
   render() {
     const divStyle = {
       marginTop: `${this.state.margin}vw`,
       backgroundColor: `${this.state.color}`
     }
     return (
-      <div className="Square">
+      <div className="Square" >
         
         <h3>Click on the square to move down<br/><br/>Click the button to move up</h3>
         
