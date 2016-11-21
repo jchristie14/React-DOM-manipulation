@@ -15,6 +15,16 @@ class Square extends Component {
       }
   }
 
+  componentWillMount(){
+    document.addEventListener("keydown", (e)=>{
+      if (e.keyCode === 40){ //down arrow
+        this._down();
+      }
+        //console.log(e.keyCode)
+    });
+
+  }
+
   _changeColor(e){
     var curColor=this.state.color;
     var colors = ['#000000', '#ff0000', '#800000', '#ffff00', '#00ff00', '#008000', '#008080',];
