@@ -9,6 +9,11 @@ class Square extends Component {
       this._changeColor=this._changeColor.bind(this);
       this._down=this._down.bind(this);
       this._up=this._up.bind(this);
+      document.addEventListener("keydown", (e)=>{
+        if (e.keyCode===38){
+          this._up();
+        }
+      })
       this.state={
         margin: this.props.startMargin,
         color: this.props.startColor
@@ -62,7 +67,7 @@ class Square extends Component {
     return (
       <div className="Square" >
         
-        <h3>Click on the square to move down<br/><br/>Click the button to move up</h3>
+        <h3>Click on the square to move down<br/><br/>Click the button to move up</h3><h4>(Up &amp; Down buttons also work)</h4>
         
         <Genericbutton
           purpose='Up'
